@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "335910597952",
+    "project_id": "ferpiguardsystem",
+    "storage_bucket": "ferpiguardsystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335910597952:android:3b58e018b074cb6095f6a5",
+        "android_client_info": {
+          "package_name": "com.example.ferpiguardsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKxJx72x3Ga7krH2bcQ-FzHT7Lomt2G7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

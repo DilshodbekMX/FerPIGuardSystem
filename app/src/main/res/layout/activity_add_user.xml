@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUserActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/button2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:rotation="180"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/baseline_menu_24"
+            android:backgroundTint="@color/LogoTextColor"
+            android:elevation="1dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="FerPIGuardSystem"
+            android:textAlignment="center"
+            android:textSize="23sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_toStartOf="@id/button4"
+            android:layout_toEndOf="@+id/button2"
+            android:textColor="@color/LogoTextColor"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/button4"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/exit"
+            android:backgroundTint="@color/LogoTextColor"
+            android:elevation="1dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.camera.view.PreviewView
+            android:padding="10dp"
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"/>
+
+        <ImageView
+            android:alpha="0.5"
+            android:layout_width="match_parent"
+            android:src="@drawable/user_back_image"
+            android:layout_height="320dp"/>
+
+        <ImageView
+            android:id="@+id/button5"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:drawableTint="@color/white"
+            android:background="@drawable/baseline_cameraswitch_24"
+            android:elevation="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/RankColor"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/button3_text"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:text="Yangi Foydalanuvchi qo'shish"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_centerInParent="true"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:background="#2C7E57C2"
+            android:elevation="1dp"
+            tools:srcCompat="@android:drawable/screen_background_light_transparent" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:hint="Add Face"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.487"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.479" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="180dp"
+            android:layout_centerInParent="true"
+            android:layout_height="180dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <ImageButton
+            android:layout_marginBottom="120dp"
+            android:layout_marginEnd="120dp"
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+

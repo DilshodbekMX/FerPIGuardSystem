@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/LogoTextColor"
+        app:strokeWidth="1sp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/homeIcon99"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="10dp"
+                app:tint="@color/LogoTextColor"
+                android:src="@drawable/baseline_key_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewHome99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Xona kaliti:"
+                android:textColor="@color/LogoTextColor"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/homeIcon99"
+                app:layout_constraintTop_toTopOf="@+id/homeIcon99" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderSendingListCustomerAddress"
+                android:text="Xona kaliti"
+                android:maxWidth="200dp"
+                android:textColor="@color/LogoTextColor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewHome99"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHome99" />
+
+
+
+
+            <ImageView
+                android:id="@+id/customerIcon99"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_account_circle_24"
+                app:layout_constraintBottom_toBottomOf="@+id/homeIcon99"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/homeIcon99"
+                app:tint="@color/LogoTextColor" />
+            <TextView
+                android:id="@+id/textViewName99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+
+                android:text="FISH:"
+                android:textColor="@color/LogoTextColor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/customerIcon99"
+                app:layout_constraintEnd_toStartOf="@+id/customerIcon99"
+                app:layout_constraintTop_toTopOf="@+id/customerIcon99"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/orderSendingListCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:maxLength="25"
+                android:text="Ism Familiyasi"
+                android:textColor="@color/LogoTextColor"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewName99"
+                app:layout_constraintTop_toBottomOf="@+id/textViewName99" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/completeSelectedOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orderSendingListCustomerName">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/linearLayout"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content"
+                    android:background="@color/LogoTextColor"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/keyTakenTime"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:text="Kalitni oldi"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/keyGivenTime"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Kalitni topshirdi"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

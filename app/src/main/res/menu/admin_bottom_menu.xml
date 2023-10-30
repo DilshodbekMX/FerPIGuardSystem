@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/adminHomeBottomBar"
+        android:title="Bosh menyu"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/adminAddBottomBar"
+        android:title="Qo'shish"
+        android:icon="@drawable/baseline_add_photo_alternate_24"/>
+    <item
+        android:id="@+id/adminListBottomBar"
+        android:title="Ro'yxat"
+        android:icon="@drawable/baseline_list_24"/>
+    <item
+        android:id="@+id/adminSettingBottomBar"
+        android:title="Sozlash"
+        android:icon="@drawable/baseline_settings_24"/>
+
+</menu>
