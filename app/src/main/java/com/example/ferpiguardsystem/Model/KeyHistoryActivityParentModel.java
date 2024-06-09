@@ -1,7 +1,7 @@
 package com.example.ferpiguardsystem.Model;
 
 import java.util.List;
-
+  
 public class KeyHistoryActivityParentModel {
 
     private String ParentItemTitle;
